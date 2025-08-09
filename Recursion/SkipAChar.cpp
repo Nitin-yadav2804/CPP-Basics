@@ -22,6 +22,6 @@ void removeChar(string ans , string original,int idx){
     else removeChar(ans+ch,original,idx+1);
 }
 int main(){
-    string str = "raghav garg";
+    string str = "nitin yadav";
     removeChar("",str,0);
 }
