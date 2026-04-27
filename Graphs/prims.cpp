@@ -16,7 +16,7 @@ ll prims(int src, int n) {
     unordered_set<int> vis;
     vector<int> par(n+1);
     unordered_map<int, int> mp;
-    for(int i = 1; i <= n; i++) {
+    for(int i = 0; i < n; i++) {
         mp[i] = INT_MAX;
     }
     pq.push({0, src});
@@ -50,7 +50,7 @@ ll prims(int src, int n) {
 int main() {
     int n, m;
     cin>>n>>m;
-    gr.resize(n+1, list<pp > ());
+    gr.resize(n, list<pp > ());
     while(m--) {
         int u, v, wt;
         cin>>u>>v>>wt;
